@@ -9,11 +9,12 @@ const DataBindingComponents = () => {
   }
   return (
     <div>
+      <h1>DataBinding</h1>
       <h3>Products info</h3>
       <dl>
         <dt>Name</dt>
         <dd>{products.name}</dd>
-        <input type="text" value={products.name} />
+        {/* <input type="text" value={products.name} /> */}
         <dt>Price</dt>
         <dd>{products.price}</dd>
         <dt>Preview</dt>
