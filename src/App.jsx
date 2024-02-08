@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import DataBindingComponents from './Components/DataBinding/DataBindingComponents'
 import CollectionBinding from './Components/DataBinding/CollectionBinding'
+import TableBinding from './Components/DataBinding/TableBinding'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
     <>
       <DataBindingComponents/>
       <CollectionBinding/>
+      <TableBinding/>
     </>
   )
 }
