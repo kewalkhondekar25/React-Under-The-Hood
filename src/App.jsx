@@ -5,6 +5,7 @@ import './App.css'
 import DataBindingComponents from './Components/DataBinding/DataBindingComponents'
 import CollectionBinding from './Components/DataBinding/CollectionBinding'
 import TableBinding from './Components/DataBinding/TableBinding'
+import NestedDinding from './Components/DataBinding/NestedBinding'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <DataBindingComponents/>
       <CollectionBinding/>
       <TableBinding/>
+      <NestedDinding/>
     </>
   )
 }
