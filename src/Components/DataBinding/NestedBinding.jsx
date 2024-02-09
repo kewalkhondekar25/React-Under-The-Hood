@@ -38,11 +38,11 @@ const NestedBinding = () => {
                 {
                     products.map((items) => {
                         return(
-                            <optgroup label={items.category}>
+                            <optgroup key={items.category} label={items.category}>
                                 {
                                     items.products.map((items) => {
                                         return(
-                                            <option>{items}</option>
+                                            <option key={items}>{items}</option>
                                         )
                                     })
                                 }
