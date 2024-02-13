@@ -13,7 +13,7 @@ const NasaApi = () => {
     },[]);
 
     return (
-        <div>
+        <div >
             <h1>NasaApi</h1>
             <table className='table table-hover'>
                 <thead>
