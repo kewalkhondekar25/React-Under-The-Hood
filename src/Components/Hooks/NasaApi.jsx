@@ -15,7 +15,7 @@ const NasaApi = () => {
     return (
         <div>
             <h1>NasaApi</h1>
-            <table>
+            <table className='table table-hover'>
                 <thead>
                     <tr>
                         <th>SR. NO</th>
