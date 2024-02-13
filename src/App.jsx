@@ -6,15 +6,17 @@ import DataBindingComponents from './Components/DataBinding/DataBindingComponent
 import CollectionBinding from './Components/DataBinding/CollectionBinding'
 import TableBinding from './Components/DataBinding/TableBinding'
 import NestedDinding from './Components/DataBinding/NestedBinding'
+import NasaApi from './Components/Hooks/NasaApi'
 
 function App() {
 
   return (
     <>
-      <DataBindingComponents/>
+      {/* <DataBindingComponents/>
       <CollectionBinding/>
       <TableBinding/>
-      <NestedDinding/>
+      <NestedDinding/> */}
+      <NasaApi/>
     </>
   )
 }
