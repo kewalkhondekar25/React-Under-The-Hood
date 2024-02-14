@@ -8,6 +8,7 @@ import TableBinding from './Components/DataBinding/TableBinding'
 import NestedDinding from './Components/DataBinding/NestedBinding'
 import NasaApi from './Components/Hooks/NasaApi'
 import FakeStoreApi from './Components/Hooks/FakeStoreApi'
+import EventBinding from './Components/TwoWayBinding/EventBinding'
 
 function App() {
 
@@ -18,7 +19,8 @@ function App() {
       <TableBinding/>
       <NestedDinding/> */}
       {/* <NasaApi/> */}
-      <FakeStoreApi/>
+      {/* <FakeStoreApi/> */}
+      <EventBinding/>
     </>
   )
 }
