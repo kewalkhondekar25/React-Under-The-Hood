@@ -8,6 +8,12 @@ const HandleForm = () => {
         city: "",
         stock: false
     });
+    const [finalProducts, setFinalProducts] = useState({
+        name: "",
+        price: 0,
+        city: "",
+        stock: false   
+    })
 
     const handleName = (e) => {
         setProducts({ 
@@ -42,6 +48,10 @@ const HandleForm = () => {
         })
     }
 
+    const handleRegister = () => {
+        setFinalProducts(products);
+    }
+
     return (
         <div className='container-fluid bg-dark text-white vh-100'>
             <h1>Register</h1>
@@ -68,17 +78,18 @@ const HandleForm = () => {
                             <input type="checkbox" className='form-check-input' onChange={handleStock} />
                         </dd>
                     </dl>
+                    <button className='btn btn-primary w-50' onClick={handleRegister}>Submit</button>
                 </div>
                 <div className='col-9'>
                     <dl>
                         <dt>Product Name</dt>
-                        <dd>{products.name}</dd>
+                        <dd>{finalProducts.name}</dd>
                         <dt>Price</dt>
-                        <dd>&#8377;{products.price}</dd>
+                        <dd>&#8377;{finalProducts.price}</dd>
                         <dt>City</dt>
-                        <dd>{products.city}</dd>
+                        <dd>{finalProducts.city}</dd>
                         <dt>Stock</dt>
-                        <dd>{products.stock? "Available": "Out of Stock"}</dd>
+                        <dd>{finalProducts.stock? "Available": "Out of Stock"}</dd>
                     </dl>
                 </div>
             </div>
