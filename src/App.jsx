@@ -9,6 +9,7 @@ import NestedDinding from './Components/DataBinding/NestedBinding'
 import NasaApi from './Components/Hooks/NasaApi'
 import FakeStoreApi from './Components/Hooks/FakeStoreApi'
 import EventBinding from './Components/TwoWayBinding/EventBinding'
+import HandleForm from './Components/TwoWayBinding/HandleForm'
 
 function App() {
 
@@ -20,7 +21,8 @@ function App() {
       <NestedDinding/> */}
       {/* <NasaApi/> */}
       {/* <FakeStoreApi/> */}
-      <EventBinding/>
+      {/* <EventBinding/> */}
+      <HandleForm/>
     </>
   )
 }

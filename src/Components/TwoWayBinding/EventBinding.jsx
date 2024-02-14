@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 const EventBinding = () => {
 
-    const [userName, setUserName] = useState("kewal");
+    const [userName, setUserName] = useState("arjun");
 
     const handleClick = (e) => {
         setUserName(e.target.value);
