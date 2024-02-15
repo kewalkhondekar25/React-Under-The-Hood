@@ -20,9 +20,9 @@ function App() {
       <TableBinding/>
       <NestedDinding/> */}
       {/* <NasaApi/> */}
-      {/* <FakeStoreApi/> */}
+      <FakeStoreApi/>
       {/* <EventBinding/> */}
-      <HandleForm/>
+      {/* <HandleForm/> */}
     </>
   )
 }
