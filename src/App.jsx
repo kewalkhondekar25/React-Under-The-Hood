@@ -12,6 +12,7 @@ import EventBinding from './Components/TwoWayBinding/EventBinding'
 import HandleForm from './Components/TwoWayBinding/HandleForm'
 import DarkMode from './Components/DarkModeLightMode/DarkMode'
 import Prop1 from './Components/PropDrilling/Prop1'
+import FormsValidation from './Components/Validation/FormsValidation'
 
 function App() {
 
@@ -26,7 +27,8 @@ function App() {
       {/* <EventBinding/> */}
       {/* <HandleForm/> */}
       {/* <DarkMode/> */}
-      <Prop1/>
+      {/* <Prop1/> */}
+      <FormsValidation/>
     </>
   )
 }
