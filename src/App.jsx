@@ -10,6 +10,8 @@ import NasaApi from './Components/Hooks/NasaApi'
 import FakeStoreApi from './Components/Hooks/FakeStoreApi'
 import EventBinding from './Components/TwoWayBinding/EventBinding'
 import HandleForm from './Components/TwoWayBinding/HandleForm'
+import DarkMode from './Components/DarkModeLightMode/DarkMode'
+import Prop1 from './Components/PropDrilling/Prop1'
 
 function App() {
 
@@ -20,9 +22,11 @@ function App() {
       <TableBinding/>
       <NestedDinding/> */}
       {/* <NasaApi/> */}
-      <FakeStoreApi/>
+      {/* <FakeStoreApi/> */}
       {/* <EventBinding/> */}
       {/* <HandleForm/> */}
+      {/* <DarkMode/> */}
+      <Prop1/>
     </>
   )
 }
