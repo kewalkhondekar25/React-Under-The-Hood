@@ -11,6 +11,13 @@ const FormsValidation = () => {
     const [pwdMsg, setPwdMsg] = useState();
     const [capsMsg, setCapsMsg] = useState(false);
     const [isValid, setIsValid] = useState(false);
+    const [cityMsg, setCityMsg] = useState();
+    const [userDetails, setUserDetails] = useState(
+        {
+            userId: "",
+            pwd: ""
+        }
+    );
 
 
     const handleUserId = (e) => {
@@ -60,6 +67,31 @@ const FormsValidation = () => {
         }
     }
 
+    const handleCity = (e) => {
+        if(e.target.value == "nocity"){
+            setCityMsg("Select a valid city")
+        }else{
+            setCityMsg(" ");
+        }
+    }
+
+    const handleUserIdChange = (e) => {
+        setUserDetails({
+            userId: e.target.value,
+            pwd: userDetails.pwd
+        });
+    }
+
+    const handleUserPwdChange = (e) => {
+        setUserDetails({
+            userId: userDetails.userId,
+            pwd: e.target.value
+        });
+    }
+
+    const handleSubmit = () => {
+        alert(JSON.stringify(userDetails));
+    }
 
     return (
         <div className='container-fluid'>
@@ -67,17 +99,29 @@ const FormsValidation = () => {
                 <dt>User Id</dt>
                 <dd><input type="text"
                     onKeyUp={handleUserId}
-                    onBlur={handleBlur} /></dd>
+                    onBlur={handleBlur}
+                    onChange={handleUserIdChange} /></dd>
                 <dd><p className={isValid ? "text-success" : "text-danger"}>{msg}</p></dd>
                 <dt>Password</dt>
                 <dd>
-                    <input type="password" onKeyUp={handlePwd}  onBlur={handlePwdBlur} />
+                    <input type="password" 
+                    onKeyUp={handlePwd}
+                    onBlur={handlePwdBlur}
+                    onChange={handleUserPwdChange} />
                 </dd>
                 <p className={isValid ? "text-success" : "text-danger"}>{pwdMsg}</p>
                 {capsMsg && <p className='text-warning'>Capslog is ON</p>}
-                
+                <dt>Your City</dt>
+                <dd>
+                    <select onChange={handleCity}>
+                        <option value="nocity">Select a City</option>
+                        <option value="pune">Pune</option>
+                        <option value="nagpur">Nagpur</option>
+                    </select>
+                </dd>
+                <p className='text-danger'>{cityMsg}</p>
             </dl>
-            <button className='btn btn-primary'>Submit</button>
+            <button onClick={handleSubmit} className='btn btn-primary'>Submit</button>
         </div>
     )
 }
