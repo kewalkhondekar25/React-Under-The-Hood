@@ -79,14 +79,14 @@ const FormsValidation = () => {
         setUserDetails({
             userId: e.target.value,
             pwd: userDetails.pwd
-        });
+        }); 
     }
 
     const handleUserPwdChange = (e) => {
         setUserDetails({
             userId: userDetails.userId,
             pwd: e.target.value
-        });
+        }); 
     }
 
     const handleSubmit = () => {
