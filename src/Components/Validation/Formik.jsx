@@ -36,8 +36,8 @@ const Formik = () => {
                         </select>
                     </dd>
                 </dl>
+                <button className='btn btn-primary'>Submit</button>
             </form>
-            <button className='btn btn-primary' onClick={formik.handleSubmit}>Submit</button>
         </div>
     )
 }
