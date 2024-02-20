@@ -13,6 +13,7 @@ import HandleForm from './Components/TwoWayBinding/HandleForm'
 import DarkMode from './Components/DarkModeLightMode/DarkMode'
 import Prop1 from './Components/PropDrilling/Prop1'
 import FormsValidation from './Components/Validation/FormsValidation'
+import Formik from './Components/Validation/Formik'
 
 function App() {
 
@@ -28,7 +29,8 @@ function App() {
       {/* <HandleForm/> */}
       {/* <DarkMode/> */}
       {/* <Prop1/> */}
-      <FormsValidation/>
+      {/* <FormsValidation/> */}
+      <Formik/>
     </>
   )
 }
