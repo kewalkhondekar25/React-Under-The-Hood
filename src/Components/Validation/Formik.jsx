@@ -7,7 +7,8 @@ const Formik = () => {
         initialValues: {
             userName: "",
             password: "",
-            city: ""
+            city: "",
+            pro: false
         },
         onSubmit: (values) => {
             alert(JSON.stringify(values))
@@ -34,6 +35,13 @@ const Formik = () => {
                             <option>Pune</option>
                             <option>Nagpur</option>
                         </select>
+                    </dd>
+                    <dt>Pro</dt>
+                    <dd>
+                        <div className='form-switch'>
+                            <input type="checkbox" className='form-check-input' name='pro' checked={formik.values.pro}
+                            onChange={formik.handleChange} />
+                        </div>
                     </dd>
                 </dl>
                 <button className='btn btn-primary'>Submit</button>
