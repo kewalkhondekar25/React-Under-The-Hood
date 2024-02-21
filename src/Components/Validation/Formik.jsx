@@ -39,7 +39,8 @@ const Formik = () => {
                     <dt>Pro</dt>
                     <dd>
                         <div className='form-switch'>
-                            <input type="checkbox" className='form-check-input' name='pro' checked={formik.values.pro}
+                            <input type="checkbox" className='form-check-input' name='pro' 
+                            checked={formik.values.pro}
                             onChange={formik.handleChange} />
                         </div>
                     </dd>

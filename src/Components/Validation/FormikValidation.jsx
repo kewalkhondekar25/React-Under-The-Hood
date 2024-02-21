@@ -7,12 +7,20 @@ const FormikValidation = () => {
         const errors = {};
         if(userDetails.userName == ""){
             errors.userName = "User Name Required"
+        }else if(userDetails.userName.length < 3){
+            errors.userName = "User Name must be greater than 3 Charecters"
+        }else if(userDetails.userName.length > 10){
+            errors.userName = "User name too long"
         }
         if(userDetails.email == ""){
             errors.email = "Email Required"
+        }else if(userDetails.email.indexOf("@") <= 2){
+            errors.email = "Enter a valid email address"
         }
         if(userDetails.age == ""){
             errors.age = "Age Required"
+        }else if(userDetails.age < 1 || userDetails.age >= 100){
+            errors.age = "Invalid Age"
         }
         return errors
     }
