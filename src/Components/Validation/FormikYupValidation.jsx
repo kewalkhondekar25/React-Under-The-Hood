@@ -29,31 +29,33 @@ const FormikYupValidation = () => {
                     alert(JSON.stringify(values))
                 }}
             >
-                <Form>
-                    {
-                        <div>
-                            <dl>
-                                <dt>User Name</dt>
-                                <dd><Field className='form-control w-25' type="text" name="userName"></Field></dd>
-                                <dd className='text-danger'><ErrorMessage name='userName'></ErrorMessage></dd>
-                                <dt>Email Id</dt>
-                                <dd><Field className='form-control w-25' type="text" name="Email"></Field></dd>
-                                <dd className='text-danger'><ErrorMessage name='Email'></ErrorMessage></dd>
-                                <dt>Age</dt>
-                                <dd><Field className='form-control w-25' type="number" name="age"></Field></dd>
-                                <dd className='text-danger'><ErrorMessage name='age'></ErrorMessage></dd>
-                                <dt>City</dt>
-                                <dd><Field className='form-control w-25' as="select" name="city">
-                                    <option>Pune</option>
-                                    <option>Nagpur</option>
-                                </Field>
-                                </dd>
-                                <dd className='text-danger'><ErrorMessage name='City'></ErrorMessage></dd>
-                            </dl>
-                            <button className='btn btn-primary'>Register</button>
-                        </div>
-                    }
-                </Form>
+                {
+                    (props) => <Form>
+                        {
+                            <div>
+                                <dl>
+                                    <dt>User Name</dt>
+                                    <dd><Field className='form-control w-25' type="text" name="userName"></Field></dd>
+                                    <dd className='text-danger'><ErrorMessage name='userName'></ErrorMessage></dd>
+                                    <dt>Email Id</dt>
+                                    <dd><Field className='form-control w-25' type="text" name="Email"></Field></dd>
+                                    <dd className='text-danger'><ErrorMessage name='Email'></ErrorMessage></dd>
+                                    <dt>Age</dt>
+                                    <dd><Field className='form-control w-25' type="number" name="age"></Field></dd>
+                                    <dd className='text-danger'><ErrorMessage name='age'></ErrorMessage></dd>
+                                    <dt>City</dt>
+                                    <dd><Field className='form-control w-25' as="select" name="city">
+                                        <option>Pune</option>
+                                        <option>Nagpur</option>
+                                    </Field>
+                                    </dd>
+                                    <dd className='text-danger'><ErrorMessage name='City'></ErrorMessage></dd>
+                                </dl>
+                                <button className='btn btn-primary' disabled={(props.isValid) ? false : true}>Register</button>
+                            </div>
+                        }
+                    </Form>
+                }
             </Formik>
         </div>
     )
