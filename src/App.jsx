@@ -15,6 +15,7 @@ import Prop1 from './Components/PropDrilling/Prop1'
 import FormsValidation from './Components/Validation/FormsValidation'
 import Formik from './Components/Validation/Formik'
 import FormikValidation from './Components/Validation/FormikValidation'
+import FormikYupValidation from './Components/Validation/FormikYupValidation'
 
 function App() {
 
@@ -32,7 +33,8 @@ function App() {
       {/* <Prop1/> */}
       {/* <FormsValidation/> */}
       {/* <Formik/> */}
-      <FormikValidation/>
+      {/* <FormikValidation/> */}
+      <FormikYupValidation/>
     </>
   )
 }
