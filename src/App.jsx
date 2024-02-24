@@ -17,6 +17,7 @@ import Formik from './Components/Validation/Formik'
 import FormikValidation from './Components/Validation/FormikValidation'
 import FormikYupValidation from './Components/Validation/FormikYupValidation'
 import ComponentsLifeCycle from './Components/Hooks/ComponentsLifeCycle'
+import UseContext from './Components/Hooks/UseContext'
 
 function App() {
 
@@ -36,7 +37,8 @@ function App() {
       {/* <Formik/> */}
       {/* <FormikValidation/> */}
       {/* <FormikYupValidation/> */}
-      <ComponentsLifeCycle/>
+      {/* <ComponentsLifeCycle/> */}
+      <UseContext/>
     </>
   )
 }
