@@ -18,6 +18,8 @@ import FormikValidation from './Components/Validation/FormikValidation'
 import FormikYupValidation from './Components/Validation/FormikYupValidation'
 import ComponentsLifeCycle from './Components/Hooks/ComponentsLifeCycle'
 import UseContext from './Components/Hooks/UseContext'
+import UseReducer from './Components/Hooks/useReducer'
+import LikeDisLike from './Components/Hooks/LikeDisLike'
 
 function App() {
 
@@ -38,7 +40,9 @@ function App() {
       {/* <FormikValidation/> */}
       {/* <FormikYupValidation/> */}
       {/* <ComponentsLifeCycle/> */}
-      <UseContext/>
+      {/* <UseContext/> */}
+      {/* <UseReducer/> */}
+      <LikeDisLike/>
     </>
   )
 }
