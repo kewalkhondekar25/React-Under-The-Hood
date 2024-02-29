@@ -32,6 +32,7 @@ const LikeDisLike = () => {
     useEffect(() => {
         loadProduct();
     }, [])
+    
     return (
         <div className='bg-dark text-white vh-100'>
             <h3>LikeDisLike</h3>

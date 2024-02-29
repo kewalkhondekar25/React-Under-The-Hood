@@ -20,6 +20,7 @@ import ComponentsLifeCycle from './Components/Hooks/ComponentsLifeCycle'
 import UseContext from './Components/Hooks/UseContext'
 import UseReducer from './Components/Hooks/useReducer'
 import LikeDisLike from './Components/Hooks/LikeDisLike'
+import JqueryAjax from './Components/API_Request/JqueryAjax'
 
 function App() {
 
@@ -42,7 +43,8 @@ function App() {
       {/* <ComponentsLifeCycle/> */}
       {/* <UseContext/> */}
       {/* <UseReducer/> */}
-      <LikeDisLike/>
+      {/* <LikeDisLike/> */}
+      <JqueryAjax/>
     </>
   )
 }
