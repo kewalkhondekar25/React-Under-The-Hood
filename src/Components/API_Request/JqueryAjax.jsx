@@ -14,15 +14,14 @@ const JqueryAjax = () => {
     }, []);
 
     return (
-        <div className='bg-dark text-white'>
-            <h3>JqueryAjax</h3>
+        <div className='bg-dark text-white vh-100 d-flex flex-wrap'>
             {
                 products.filter((item) => {
                     return item.category == "men's clothing"
                 })
                     .map((item) => {
                         return (
-                            <div className="card w-25 d-flex" key={item.id}>
+                            <div className="card w-25 d-flex bg-dark text-white" key={item.id}>
                                 <img className="card-img-top" src={item.image}
                                     alt="Card image cap" style={{ height: "200px", width: "200px" }} />
                                 <div className="card-body">
