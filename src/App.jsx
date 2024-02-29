@@ -21,6 +21,7 @@ import UseContext from './Components/Hooks/UseContext'
 import UseReducer from './Components/Hooks/useReducer'
 import LikeDisLike from './Components/Hooks/LikeDisLike'
 import JqueryAjax from './Components/API_Request/JqueryAjax'
+import AxiosDemo from './Components/API_Request/AxiosDemo'
 
 function App() {
 
@@ -44,7 +45,8 @@ function App() {
       {/* <UseContext/> */}
       {/* <UseReducer/> */}
       {/* <LikeDisLike/> */}
-      <JqueryAjax/>
+      {/* <JqueryAjax/> */}
+      <AxiosDemo/>
     </>
   )
 }
