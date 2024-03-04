@@ -22,6 +22,7 @@ import UseReducer from './Components/Hooks/useReducer'
 import LikeDisLike from './Components/Hooks/LikeDisLike'
 import JqueryAjax from './Components/API_Request/JqueryAjax'
 import AxiosDemo from './Components/API_Request/AxiosDemo'
+import ShoppingIndex from './Components/Routing/ShoppingRouting/ShoppingIndex'
 
 function App() {
 
@@ -46,7 +47,8 @@ function App() {
       {/* <UseReducer/> */}
       {/* <LikeDisLike/> */}
       {/* <JqueryAjax/> */}
-      <AxiosDemo/>
+      {/* <AxiosDemo/> */}
+      <ShoppingIndex/>
     </>
   )
 }
