@@ -4,6 +4,7 @@ import Electronics from './Electronics'
 import Fashion from './Fashion'
 import Footware from './Footware'
 import FakeStoreApi from '../../Hooks/FakeStoreApi'
+import Error from './Error'
 
 const ShoppingIndex = () => {
     return (
@@ -20,6 +21,7 @@ const ShoppingIndex = () => {
                 <Route path='/fashion' element={<Fashion />} />
                 <Route path='/footware' element={<Footware />} />
                 <Route path='/fakestore' element={<FakeStoreApi/>}/>
+                <Route path='*' element={<Error/>}/>
             </Routes>
         </Router>
     )

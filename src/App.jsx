@@ -23,6 +23,7 @@ import LikeDisLike from './Components/Hooks/LikeDisLike'
 import JqueryAjax from './Components/API_Request/JqueryAjax'
 import AxiosDemo from './Components/API_Request/AxiosDemo'
 import ShoppingIndex from './Components/Routing/ShoppingRouting/ShoppingIndex'
+import Accordion from './Components/Accordion/Accordion'
 
 function App() {
 
@@ -48,7 +49,8 @@ function App() {
       {/* <LikeDisLike/> */}
       {/* <JqueryAjax/> */}
       {/* <AxiosDemo/> */}
-      <ShoppingIndex/>
+      {/* <ShoppingIndex/> */}
+      <Accordion/>
     </>
   )
 }
