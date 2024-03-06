@@ -30,6 +30,8 @@ import { UseState } from './Components/Hooks/UseState'
 import { Parent } from './Components/Props/Parent'
 import { Inline } from './Components/InlineExpression/Inline'
 import { EventHandling } from './Components/EventHandling/EventHandling'
+import { Forms } from './Components/Forms/Forms'
+import { ControlComp } from './Components/ControlUncontrolComp/ControlComp'
 
 function App() {
 
@@ -62,7 +64,9 @@ function App() {
       {/* <UseState/> */}
       {/* <Parent/> */}
       {/* <Inline/> */}
-      <EventHandling/>
+      {/* <EventHandling/> */}
+      {/* <Forms/> */}
+      <ControlComp/>
     </>
   )
 }
