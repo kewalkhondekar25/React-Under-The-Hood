@@ -33,6 +33,7 @@ import { EventHandling } from './Components/EventHandling/EventHandling'
 import { Forms } from './Components/Forms/Forms'
 import { ControlComp } from './Components/ControlUncontrolComp/ControlComp'
 import { InnerHtml } from './Components/InnerHtml/InnerHtml'
+import { Api } from './Components/API_Request/Api'
 
 function App() {
 
@@ -68,7 +69,8 @@ function App() {
       {/* <EventHandling/> */}
       {/* <Forms/> */}
       {/* <ControlComp/> */}
-      <InnerHtml/>
+      {/* <InnerHtml/> */}
+      <Api/>
     </>
   )
 }
