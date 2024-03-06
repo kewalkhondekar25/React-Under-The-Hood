@@ -32,6 +32,7 @@ import { Inline } from './Components/InlineExpression/Inline'
 import { EventHandling } from './Components/EventHandling/EventHandling'
 import { Forms } from './Components/Forms/Forms'
 import { ControlComp } from './Components/ControlUncontrolComp/ControlComp'
+import { InnerHtml } from './Components/InnerHtml/InnerHtml'
 
 function App() {
 
@@ -66,7 +67,8 @@ function App() {
       {/* <Inline/> */}
       {/* <EventHandling/> */}
       {/* <Forms/> */}
-      <ControlComp/>
+      {/* <ControlComp/> */}
+      <InnerHtml/>
     </>
   )
 }
