@@ -26,6 +26,7 @@ import ShoppingIndex from './Components/Routing/ShoppingRouting/ShoppingIndex'
 import Accordion from './Components/Accordion/Accordion'
 import Map from './Components/ArrayMethods/Map'
 import Filter  from './Components/ArrayMethods/Filter'
+import { UseState } from './Components/Hooks/UseState'
 
 function App() {
 
@@ -54,7 +55,8 @@ function App() {
       {/* <ShoppingIndex/> */}
       {/* <Accordion/> */}
       {/* <Map/> */}
-      <Filter/>
+      {/* <Filter/> */}
+      <UseState/>
     </>
   )
 }
