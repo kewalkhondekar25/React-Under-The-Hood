@@ -6,7 +6,7 @@ const Child = ({name, handleClick}) => {
         <h3>{name}</h3>
         <button 
         className='btn btn-warning'
-        onClick={handleClick}>Change Name</button>
+        onClick={() => handleClick("karna")}>Change Name</button>
     </div>
   )
 }

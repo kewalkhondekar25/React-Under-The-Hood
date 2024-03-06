@@ -5,8 +5,8 @@ export const Parent = () => {
 
     const [name, setName] = useState("arjun");
 
-    const handleClick = () => {
-      setName("krishna")
+    const handleClick = (value) => {
+      setName(value)
     }
     
   return (

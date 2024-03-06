@@ -28,6 +28,7 @@ import Map from './Components/ArrayMethods/Map'
 import Filter  from './Components/ArrayMethods/Filter'
 import { UseState } from './Components/Hooks/UseState'
 import { Parent } from './Components/Props/Parent'
+import { Inline } from './Components/InlineExpression/Inline'
 
 function App() {
 
@@ -58,7 +59,8 @@ function App() {
       {/* <Map/> */}
       {/* <Filter/> */}
       {/* <UseState/> */}
-      <Parent/>
+      {/* <Parent/> */}
+      <Inline/>
     </>
   )
 }
