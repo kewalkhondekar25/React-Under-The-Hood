@@ -35,6 +35,7 @@ import { ControlComp } from './Components/ControlUncontrolComp/ControlComp'
 import { InnerHtml } from './Components/InnerHtml/InnerHtml'
 import { Api } from './Components/API_Request/Api'
 import { AxiosDemo2 } from './Components/API_Request/AxiosDemo2'
+import { AxiosDemo3 } from './Components/API_Request/AxiosDemo3'
 
 function App() {
 
@@ -72,7 +73,8 @@ function App() {
       {/* <ControlComp/> */}
       {/* <InnerHtml/> */}
       {/* <Api/> */}
-      <AxiosDemo2/>
+      {/* <AxiosDemo2/> */}
+      <AxiosDemo3/>
     </>
   )
 }
