@@ -29,6 +29,7 @@ import Filter  from './Components/ArrayMethods/Filter'
 import { UseState } from './Components/Hooks/UseState'
 import { Parent } from './Components/Props/Parent'
 import { Inline } from './Components/InlineExpression/Inline'
+import { EventHandling } from './Components/EventHandling/EventHandling'
 
 function App() {
 
@@ -60,7 +61,8 @@ function App() {
       {/* <Filter/> */}
       {/* <UseState/> */}
       {/* <Parent/> */}
-      <Inline/>
+      {/* <Inline/> */}
+      <EventHandling/>
     </>
   )
 }
