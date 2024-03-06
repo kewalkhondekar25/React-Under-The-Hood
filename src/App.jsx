@@ -34,6 +34,7 @@ import { Forms } from './Components/Forms/Forms'
 import { ControlComp } from './Components/ControlUncontrolComp/ControlComp'
 import { InnerHtml } from './Components/InnerHtml/InnerHtml'
 import { Api } from './Components/API_Request/Api'
+import { AxiosDemo2 } from './Components/API_Request/AxiosDemo2'
 
 function App() {
 
@@ -70,7 +71,8 @@ function App() {
       {/* <Forms/> */}
       {/* <ControlComp/> */}
       {/* <InnerHtml/> */}
-      <Api/>
+      {/* <Api/> */}
+      <AxiosDemo2/>
     </>
   )
 }
