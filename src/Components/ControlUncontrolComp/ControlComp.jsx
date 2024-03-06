@@ -10,10 +10,23 @@ export const ControlComp = () => {
         console.log(age.current.value);
     }
 
+    const handleNameChange = (e) => {
+        console.log(e.target.value);    
+    }
+    const handleAgeChange = (e) => {
+        console.log(e.target.value);
+    }
+
   return (
     <div>
-        <input type="text"  ref={name}/>
+        {/* uncontrolled component */}
+        {/* <input type="text"  ref={name}/>
         <input type="number" ref={age} />
+        <button onClick={handleSubmit}>Submit</button> */}
+
+        {/* controlled component */}
+        <input type="text"  onChange={handleNameChange}/>
+        <input type="number" onChange={handleAgeChange} />
         <button onClick={handleSubmit}>Submit</button>
     </div>
   )
