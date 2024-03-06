@@ -24,6 +24,8 @@ import JqueryAjax from './Components/API_Request/JqueryAjax'
 import AxiosDemo from './Components/API_Request/AxiosDemo'
 import ShoppingIndex from './Components/Routing/ShoppingRouting/ShoppingIndex'
 import Accordion from './Components/Accordion/Accordion'
+import Map from './Components/ArrayMethods/Map'
+import Filter  from './Components/ArrayMethods/Filter'
 
 function App() {
 
@@ -50,7 +52,9 @@ function App() {
       {/* <JqueryAjax/> */}
       {/* <AxiosDemo/> */}
       {/* <ShoppingIndex/> */}
-      <Accordion/>
+      {/* <Accordion/> */}
+      {/* <Map/> */}
+      <Filter/>
     </>
   )
 }
