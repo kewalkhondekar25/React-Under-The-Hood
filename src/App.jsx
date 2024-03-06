@@ -27,6 +27,7 @@ import Accordion from './Components/Accordion/Accordion'
 import Map from './Components/ArrayMethods/Map'
 import Filter  from './Components/ArrayMethods/Filter'
 import { UseState } from './Components/Hooks/UseState'
+import { Parent } from './Components/Props/Parent'
 
 function App() {
 
@@ -56,7 +57,8 @@ function App() {
       {/* <Accordion/> */}
       {/* <Map/> */}
       {/* <Filter/> */}
-      <UseState/>
+      {/* <UseState/> */}
+      <Parent/>
     </>
   )
 }
