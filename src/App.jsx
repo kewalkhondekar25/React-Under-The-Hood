@@ -36,6 +36,7 @@ import { InnerHtml } from './Components/InnerHtml/InnerHtml'
 import { Api } from './Components/API_Request/Api'
 import { AxiosDemo2 } from './Components/API_Request/AxiosDemo2'
 import { AxiosDemo3 } from './Components/API_Request/AxiosDemo3'
+import { DebounceImpl } from './Components/Debounce/DebounceImpl'
 
 function App() {
 
@@ -74,7 +75,8 @@ function App() {
       {/* <InnerHtml/> */}
       {/* <Api/> */}
       {/* <AxiosDemo2/> */}
-      <AxiosDemo3/>
+      {/* <AxiosDemo3/> */}
+      <DebounceImpl/>
     </>
   )
 }

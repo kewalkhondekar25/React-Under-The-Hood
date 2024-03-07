@@ -18,7 +18,7 @@ export const AxiosDemo3 = () => {
         {
             products.map(item => {
                 return(
-                    <li>{item.title}</li>
+                    <li key={item.id}>{item.title}</li>
                 )
             })
         }
