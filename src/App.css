@@ -3,3 +3,22 @@
     height: 200px;
     width: 200px;
 }
+
+/* theme */
+.navi{
+    display: flex;
+    justify-content: space-between;
+}
+.dark{
+    background-color: black;
+    color: white;
+}
+
+.light{
+    background-color: white;
+    color: black;
+}
+
+.page{
+    height: 100vh;
+}
