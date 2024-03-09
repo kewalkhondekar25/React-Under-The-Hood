@@ -38,6 +38,7 @@ import { AxiosDemo2 } from './Components/API_Request/AxiosDemo2'
 import { AxiosDemo3 } from './Components/API_Request/AxiosDemo3'
 import { DebounceImpl } from './Components/Debounce/DebounceImpl'
 import ThemeIndex from './Components/Theme/ThemeIndex'
+import GlobalIndex from './Components/GlobalContext/GlobalIndex'
 
 function App() {
 
@@ -79,7 +80,8 @@ function App() {
       {/* <AxiosDemo3/> */}
       {/* <DebounceImpl/> */}
       {/* <MainParent/> */}
-      <ThemeIndex/>
+      {/* <ThemeIndex/> */}
+      <GlobalIndex/>
     </>
   )
 }
