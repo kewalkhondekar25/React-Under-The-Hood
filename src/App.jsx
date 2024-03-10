@@ -40,6 +40,7 @@ import { DebounceImpl } from './Components/Debounce/DebounceImpl'
 import ThemeIndex from './Components/Theme/ThemeIndex'
 import GlobalIndex from './Components/GlobalContext/GlobalIndex'
 import Employee from './Components/EmployeeList/Employee'
+import MealsIndex from './Components/MealsCalculator/MealsIndex'
 
 function App() {
 
@@ -83,7 +84,8 @@ function App() {
       {/* <MainParent/> */}
       {/* <ThemeIndex/> */}
       {/* <GlobalIndex/> */}
-      <Employee/>
+      {/* <Employee/> */}
+      <MealsIndex/>
     </>
   )
 }
