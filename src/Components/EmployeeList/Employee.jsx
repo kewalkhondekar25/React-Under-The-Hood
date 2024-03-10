@@ -15,6 +15,11 @@ const Reducer = (state, action) => {
     {
         return {...state, employee: data}
     }
+    if(action.type === 'REMOVE')
+    {
+        let newEmployee = state.employee.filter(item => item.id !== action.payload.id);
+        return {...state, employee: newEmployee}
+    }
     return state
 }
 
@@ -23,18 +28,15 @@ const Employee = () => {
     const [state, dispatch] = useReducer(Reducer, initialState)
 
     const handleRemove = (id) => {
-        dispatch({type: 'REMOVE'})
-        // setEmployee(employee.filter(item => item.id !== id));
-    }
+        dispatch({type: 'REMOVE', payload: {id}})
+        }
 
     const handleClearAll = () => {
         dispatch({type: 'CLEAR_ALL'})
-        // setEmployee([]);
     }
 
     const handleRest = () => {
         dispatch({type: 'RESET'})
-        // setEmployee(data);
     }
 
     console.log(state);
