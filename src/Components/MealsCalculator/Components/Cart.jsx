@@ -14,17 +14,18 @@ const Cart = () => {
         <h3>Qty: {count}</h3>
       {
         cart.map(item => {
+            const {_id, category, title, description, price, image, quant} = item;
             return(
-                <div key={item._id}>
-                    <p>{item.title}</p>
+                <div key={_id}>
                     <div className='d-flex align-items-center'>
-                        <img src={item.image} alt="pic" style={{height: "125px" , width: "100px"}} />
+                        <img src={image} alt="pic" style={{height: "125px" , width: "100px"}} />
                         <div className='p-1'>
                             <button>-</button>
-                            <span>0</span>
+                            <span>{quant}</span>
                             <button>+</button>
                         </div>
                     </div>
+                    <p>{item.title}</p>
                 </div>
             )
         })

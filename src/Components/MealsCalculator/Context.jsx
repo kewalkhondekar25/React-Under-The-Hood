@@ -12,7 +12,7 @@ const initialState = {
 const AppContext = createContext();
 
 const AppProvider = ({children}) => {
-    const [state, dispatch] = useReducer(Reducer, initialState)
+    const [state, dispatch] = useReducer(Reducer, initialState);
 
     //fetch meals
     const fetchMeals = async () => {
@@ -26,9 +26,9 @@ const AppProvider = ({children}) => {
     }
 
     //add to cart
-    const addToCart = (id) => {
+    const addToCart = (_id, category, title, description, price, image, quant) => {
         alert('Meal added to Cart');
-        dispatch({type: 'ADD_TO_CART', payload: id})
+        dispatch({type: 'ADD_TO_CART', payload: {_id, category, title, description, price, image, quant}});
     }
 
     //clear cart
