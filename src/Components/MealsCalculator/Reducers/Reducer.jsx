@@ -8,17 +8,18 @@ const Reducer = (state, action) => {
 
     if(action.type === "ADD_TO_CART"){
         const {_id, category, title, description, price, image, quant} = action.payload;
-        let sameItems = state.cart.find(item => item._id === _id)
-        if(sameItems){
-            let tempItems = state.cart.map(item => {
+        let sameItem = state.cart.find(item => item._id === _id);
+        if(sameItem){
+            let tempItem = state.cart.map(item => {
                 if(item._id === _id){
-                    let newQuant = item.quant + quant
+                    let newQuant = item.quant + quant;
                     return {...item, quant: newQuant}
                 }else{
                     return item
                 }
             })
-            return {...state, cart: tempItems}
+            console.log(tempItem);
+            return {...state, cart: tempItem}
         }else{
             let tempCart = {
                 _id, 
@@ -40,7 +41,29 @@ const Reducer = (state, action) => {
     if(action.type === 'CLEAR_CART'){
         return {...state, cart: []}
     }
-
+    if(action.type === 'HANDLE_INCREMENT'){
+        let tempQuant = state.cart.map(item => {
+            if(item._id === action.payload){
+                let newQuant = item.quant + 1;
+                return {...item, quant: newQuant}
+            }else{
+                return item
+            }
+        })
+        return {...state, cart: tempQuant}
+    }
+    if(action.type === 'HANDLE_DECREMENT'){
+        let tempQuant = state.cart.map(item => {
+            if(item._id === action.payload){
+                let newQuant = item.quant - 1;
+                return {...item, quant: newQuant}
+            }else{
+                return item
+            }
+        })
+        return {...state, cart: tempQuant}
+    }
+    
     return state;
 }
 

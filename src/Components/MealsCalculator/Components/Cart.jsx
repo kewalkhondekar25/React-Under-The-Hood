@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { AppContext } from '../Context'
 
 const Cart = () => {
-    const {cart, count, clearCart} = useContext(AppContext);
+    const {cart, count, clearCart, handleIncrement, handleDecrement} = useContext(AppContext);
     if(cart.length < 1)
     {
         return(
@@ -20,14 +20,14 @@ const Cart = () => {
                     <div className='d-flex align-items-center'>
                         <img src={image} alt="pic" style={{height: "125px" , width: "100px"}} />
                         <div className='p-1'>
-                            <button>-</button>
+                            <button onClick={() => handleDecrement(_id)}>-</button>
                             <span>{quant}</span>
-                            <button>+</button>
+                            <button onClick={() => handleIncrement(_id)}>+</button>
                         </div>
                     </div>
                     <p>{item.title}</p>
                 </div>
-            )
+            ) 
         })
       }
       <button 

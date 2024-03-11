@@ -15,7 +15,7 @@ const Meals = () => {
                     <p>{item.title}</p>
                     <button 
                     className='btn btn-success w-50'
-                    onClick={() => addToCart(_id, category, title, description, price, image, quant)}>Add to Cart</button>
+                    onClick={() => addToCart(_id, category, title, description, price, image, quant,)}>Add to Cart</button>
                 </div>
             )
         })

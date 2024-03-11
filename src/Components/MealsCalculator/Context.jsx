@@ -39,6 +39,13 @@ const AppProvider = ({children}) => {
     const updateCount = () => {
         dispatch({type: 'UPDATE_COUNT'})
     }
+    //update quant
+    const handleIncrement = (id) => {
+        dispatch({type: 'HANDLE_INCREMENT', payload: id})
+    }
+    const handleDecrement = (id) => {
+        dispatch({type: 'HANDLE_DECREMENT', payload: id})
+    }
     useEffect(() => {
         fetchMeals();
     }, [])
@@ -51,7 +58,9 @@ const AppProvider = ({children}) => {
     return <AppContext.Provider value={{
         ...state,
         addToCart,
-        clearCart
+        clearCart,
+        handleIncrement,
+        handleDecrement
 
     }}>
         {children}
