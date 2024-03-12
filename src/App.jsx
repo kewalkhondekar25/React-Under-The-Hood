@@ -41,6 +41,7 @@ import ThemeIndex from './Components/Theme/ThemeIndex'
 import GlobalIndex from './Components/GlobalContext/GlobalIndex'
 import Employee from './Components/EmployeeList/Employee'
 import MealsIndex from './Components/MealsCalculator/MealsIndex'
+import State from './Components/FAQs/State_Vs_Props/State'
 
 function App() {
 
@@ -85,7 +86,8 @@ function App() {
       {/* <ThemeIndex/> */}
       {/* <GlobalIndex/> */}
       {/* <Employee/> */}
-      <MealsIndex/>
+      {/* <MealsIndex/> */}
+      <State/>
     </>
   )
 }
