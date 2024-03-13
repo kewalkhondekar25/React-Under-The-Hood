@@ -42,6 +42,7 @@ import GlobalIndex from './Components/GlobalContext/GlobalIndex'
 import Employee from './Components/EmployeeList/Employee'
 import MealsIndex from './Components/MealsCalculator/MealsIndex'
 import State from './Components/FAQs/State_Vs_Props/State'
+import Carousal from './Components/FAQs/Carousal/Carousal'
 
 function App() {
 
@@ -87,7 +88,8 @@ function App() {
       {/* <GlobalIndex/> */}
       {/* <Employee/> */}
       {/* <MealsIndex/> */}
-      <State/>
+      {/* <State/> */}
+      <Carousal/>
     </>
   )
 }
