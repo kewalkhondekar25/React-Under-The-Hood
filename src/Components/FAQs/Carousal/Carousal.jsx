@@ -9,17 +9,29 @@ const Carousal = () => {
     ];
     const [count, setCount] = useState(0);
     const handlePrev = () => {
-    if()
+        if(count === 0){
+            setCount(data.length - 1);
+        }else{
+            setCount(count - 1);
+        }
+    }
+    const handleNext = () => {
+        if(count === data.length - 1){
+            setCount(0);
+        }else{
+            setCount(count + 1);
+        }
+    }
     return (
         <div style={{ display: "flex", justifyContent: "center", marginTop: "100px" }}>
             <button 
-            onClick={() => setCount(count - 1)}
+            onClick={handlePrev}
             style={{ height: "50px", marginTop: "150px", padding: "10px"}}
             >prev</button>
             
             <img src={data[count]} alt="pic" style={{ height: "400px" }} />
             <button 
-            onClick={() => setCount(count + 1)}
+            onClick={handleNext}
             style={{ height: "50px", marginTop: "150px", padding: "10px"}}
             >next</button>
             
