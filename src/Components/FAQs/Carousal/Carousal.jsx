@@ -9,18 +9,20 @@ const Carousal = () => {
     ];
     const [count, setCount] = useState(0);
     const handlePrev = () => {
-        if(count === 0){
-            setCount(data.length - 1);
-        }else{
-            setCount(count - 1);
-        }
+        setCount(count === 0 ? data.length - 1 : count - 1);
+        // if(count === 0){
+        //     setCount(data.length - 1);
+        // }else{
+        //     setCount(count - 1);
+        // }
     }
     const handleNext = () => {
-        if(count === data.length - 1){
-            setCount(0);
-        }else{
-            setCount(count + 1);
-        }
+        setCount(count === data.length - 1 ? 0 : count + 1)
+        // if(count === data.length - 1){
+        //     setCount(0);
+        // }else{
+        //     setCount(count + 1);
+        // }
     }
     return (
         <div style={{ display: "flex", justifyContent: "center", marginTop: "100px" }}>
