@@ -43,6 +43,7 @@ import Employee from './Components/EmployeeList/Employee'
 import MealsIndex from './Components/MealsCalculator/MealsIndex'
 import State from './Components/FAQs/State_Vs_Props/State'
 import Carousal from './Components/FAQs/Carousal/Carousal'
+import UseEffect from './Components/Hooks/UseEffect'
 
 function App() {
 
@@ -72,7 +73,7 @@ function App() {
       {/* <Accordion/> */}
       {/* <Map/> */}
       {/* <Filter/> */}
-      <UseState/>
+      {/* <UseState/> */}
       {/* <Parent/> */}
       {/* <Inline/> */}
       {/* <EventHandling/> */}
@@ -90,6 +91,7 @@ function App() {
       {/* <MealsIndex/> */}
       {/* <State/> */}
       {/* <Carousal/> */}
+      <UseEffect/>
     </>
   )
 }
