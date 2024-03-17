@@ -72,7 +72,7 @@ function App() {
       {/* <Accordion/> */}
       {/* <Map/> */}
       {/* <Filter/> */}
-      {/* <UseState/> */}
+      <UseState/>
       {/* <Parent/> */}
       {/* <Inline/> */}
       {/* <EventHandling/> */}
@@ -89,7 +89,7 @@ function App() {
       {/* <Employee/> */}
       {/* <MealsIndex/> */}
       {/* <State/> */}
-      <Carousal/>
+      {/* <Carousal/> */}
     </>
   )
 }

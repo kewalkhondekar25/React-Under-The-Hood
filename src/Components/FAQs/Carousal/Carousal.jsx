@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const Carousal = () => {
 
@@ -24,17 +24,24 @@ const Carousal = () => {
         //     setCount(count + 1);
         // }
     }
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            handleNext();
+        }, 2000);
+        return () => {
+            clearTimeout(timer);
+        }
+    }, [count])
     return (
-        <div style={{ display: "flex", justifyContent: "center", marginTop: "100px" }}>
+        <div style={{ display: "flex", justifyContent: "center", marginTop: "100px", position: "relative" }}>
             <button 
             onClick={handlePrev}
-            style={{ height: "50px", marginTop: "150px", padding: "10px"}}
+            style={{ height: "50px", marginTop: "150px", padding: "10px", position: "absolute", left: "200px"}}
             >prev</button>
-            
             <img src={data[count]} alt="pic" style={{ height: "400px" }} />
             <button 
             onClick={handleNext}
-            style={{ height: "50px", marginTop: "150px", padding: "10px"}}
+            style={{ height: "50px", marginTop: "150px", padding: "10px", position: "absolute", right: "200px"}}
             >next</button>
             
         </div>
