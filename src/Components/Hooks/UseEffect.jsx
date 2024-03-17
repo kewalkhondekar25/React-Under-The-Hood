@@ -6,6 +6,9 @@ const UseEffect = () => {
 
     useEffect(() => {
         console.log('mounted');
+        return () => {
+          console.log('unmounted');
+        }
     }, [count])
   return (
     <div className='bg-dark text-white vh-100'>
