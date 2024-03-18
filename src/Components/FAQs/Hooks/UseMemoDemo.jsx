@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 
 const UseMemoDemo = () => {
     const [theme, setTheme] = useState(true);
@@ -18,6 +18,8 @@ const UseMemoDemo = () => {
         console.log('filtering...');
         return  arr.filter(item => item.price < 900);
     }
+    const memoizedFunc = useMemo(() => filterProds(products), [products]);
+
     useEffect(() => {
         loadProds();
     }, []);
@@ -26,9 +28,8 @@ const UseMemoDemo = () => {
     <div style={theme ? {backgroundColor: 'black', color: 'white', height: '100vh'} : {backgroundColor: 'white', color: 'black', height: '100vh'}}>
         <h3>Use Memo</h3>
         <button onClick={() => setTheme(prev => !prev)}>Toggle Theme</button>
-        {/* <button onClick={filterProds}>Filter</button> */}
         {
-            filterProds(products).map(item => {
+            memoizedFunc.map(item => {
                 return(
                     <div key={item.id}>
                         <p>{item.price}</p>
