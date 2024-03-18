@@ -45,6 +45,8 @@ import State from './Components/FAQs/State_Vs_Props/State'
 import Carousal from './Components/FAQs/Carousal/Carousal'
 import UseEffect from './Components/Hooks/UseEffect'
 import UseMemo from './Components/Hooks/UseMemo'
+import UseCallBack from './Components/Hooks/UseCallBack'
+import UseMemoDemo from './Components/FAQs/Hooks/UseMemoDemo'
 
 function App() {
 
@@ -93,7 +95,9 @@ function App() {
       {/* <State/> */}
       {/* <Carousal/> */}
       {/* <UseEffect/> */}
-      <UseMemo/>
+      {/* <UseMemo/> */}
+      {/* <UseCallBack/> */}
+      <UseMemoDemo/>
     </>
   )
 }
