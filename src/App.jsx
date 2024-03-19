@@ -48,6 +48,7 @@ import UseMemo from './Components/Hooks/UseMemo'
 import UseCallBack from './Components/Hooks/UseCallBack'
 import UseMemoDemo from './Components/FAQs/Hooks/UseMemoDemo'
 import UseCallBackDemo from './Components/FAQs/Hooks/UseCallBackDemo'
+import UseRefDemo from './Components/FAQs/Hooks/UseRefDemo'
 
 function App() {
 
@@ -99,7 +100,8 @@ function App() {
       {/* <UseMemo/> */}
       {/* <UseCallBack/> */}
       {/* <UseMemoDemo/> */}
-      <UseCallBackDemo/>
+      {/* <UseCallBackDemo/> */}
+      <UseRefDemo/>
     </>
   )
 }

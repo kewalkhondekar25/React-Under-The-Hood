@@ -18,7 +18,7 @@ const UseMemoDemo = () => {
         console.log('filtering...');
         return  arr.filter(item => item.price < 900);
     }
-    const memoizedFunc = useMemo(() => filterProds(products), [products]);
+    const memoizedFunc = useMemo(() => filterProds(products), [products]);  
 
     useEffect(() => {
         loadProds();
