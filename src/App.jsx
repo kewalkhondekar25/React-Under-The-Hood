@@ -49,6 +49,7 @@ import UseCallBack from './Components/Hooks/UseCallBack'
 import UseMemoDemo from './Components/FAQs/Hooks/UseMemoDemo'
 import UseCallBackDemo from './Components/FAQs/Hooks/UseCallBackDemo'
 import UseRefDemo from './Components/FAQs/Hooks/UseRefDemo'
+import HocIndex from './Components/FAQs/HOC/HocIndex'
 
 function App() {
 
@@ -101,7 +102,8 @@ function App() {
       {/* <UseCallBack/> */}
       {/* <UseMemoDemo/> */}
       {/* <UseCallBackDemo/> */}
-      <UseRefDemo/>
+      {/* <UseRefDemo/> */}
+      <HocIndex/>
     </>
   )
 }
