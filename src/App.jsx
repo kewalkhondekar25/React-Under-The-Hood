@@ -50,6 +50,7 @@ import UseMemoDemo from './Components/FAQs/Hooks/UseMemoDemo'
 import UseCallBackDemo from './Components/FAQs/Hooks/UseCallBackDemo'
 import UseRefDemo from './Components/FAQs/Hooks/UseRefDemo'
 import HocIndex from './Components/FAQs/HOC/HocIndex'
+import HOCIndex2 from './Components/FAQs/HOC2/HOCIndex2'
 
 function App() {
 
@@ -103,7 +104,8 @@ function App() {
       {/* <UseMemoDemo/> */}
       {/* <UseCallBackDemo/> */}
       {/* <UseRefDemo/> */}
-      <HocIndex/>
+      {/* <HocIndex/> */}
+      <HOCIndex2/>
     </>
   )
 }

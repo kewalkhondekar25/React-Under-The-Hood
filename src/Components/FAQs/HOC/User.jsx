@@ -2,8 +2,8 @@ import React from 'react'
 
 const User = ({age}) => {
     const user = {
-        name: 'john',
-        email: 'john@example.com'
+        name: 'david',
+        email: 'david@example.com'
     }
   return (
     <div>
