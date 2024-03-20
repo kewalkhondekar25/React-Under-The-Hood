@@ -5,7 +5,7 @@ const UseRefDemo = () => {
     const btn = useRef(null);
 
     useEffect(() => {
-        cursor.current.focus();
+        btn.current.focus();
         console.log(btn.current);
     }, [])
   return (
